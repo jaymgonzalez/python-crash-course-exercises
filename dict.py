@@ -61,3 +61,27 @@
 #     else:
 #         print(f'Please {friend} tell me your fav num')
 
+# Dictionary within dictionary
+users = {
+    'debs': {
+        'name': 'debs',
+        'surname': 'deriu',
+        'age': 31,
+        'city': 'sassari'
+    },
+    'jay': {
+        'name': 'jay',
+        'surname': 'gonzalez',
+        'age': 34,
+        'city': 'sassari'
+    },
+    'gordo': {
+        'name': 'jullien',
+        'surname': 'lloveras',
+        'age': 35,
+        'city': 'buenos aires'
+    },
+}
+for user, details in users.items():
+    full_name = details['name'] + ' ' + details['surname']
+    print(f'{user} full name is: {full_name}')
