@@ -104,3 +104,27 @@ def make_great(list, updated_list):
 make_great(magicians[:], great_magicians)
 show_magicians(great_magicians)
 show_magicians(magicians)
+
+# Sandwiches
+def sandwich(*toppings):
+    print('The sandwich you ordered has the following ingridients:')
+    for topping in toppings:
+        print(f'- {topping}')
+
+sandwich('tomatoes', 'bacon', 'avocado', 'mayo')
+sandwich('lettice', 'onion', 'egg')
+sandwich('burger', 'cheese', 'bbq sauce')
+
+# User profile
+def user_profile(first, last, **user_info):
+    profile = {}
+    profile['first name'] = first
+    profile['last name'] = last
+    for title, data in user_info.items():
+        profile[title] = data
+
+    return profile
+
+jay = user_profile('jaime', 'gonzalez', born_in='madrid', supporter='Real Madrid', ocuppation='programmer')
+print(jay)
+
