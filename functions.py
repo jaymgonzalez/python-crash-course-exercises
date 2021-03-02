@@ -127,4 +127,3 @@ def user_profile(first, last, **user_info):
 
 jay = user_profile('jaime', 'gonzalez', born_in='madrid', supporter='Real Madrid', ocuppation='programmer')
 print(jay)
-
