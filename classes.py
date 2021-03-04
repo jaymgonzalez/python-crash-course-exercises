@@ -144,3 +144,19 @@ class Admin(User):
 
 # admin = Admin('jay', 'gonzalez', 'juju@gmail.com', '69696969696')
 # admin.privileges.show_privileges()
+
+
+class Employee():
+    '''employee class to store infor about him/her'''
+
+    def __init__(self, first_name, last_name, salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.salary = salary
+
+    def give_raise(self, increase=5000):
+        self.salary += increase
+
+
+# jay = Employee('jay', 'gonzalez', 45000)
+# jay.give_raise()
